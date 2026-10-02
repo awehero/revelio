@@ -1,16 +1,15 @@
 // revelio/scripts/main.js
 
 setInterval(() => {
-    if (!player) return;
+    if (!player || !gameRegion) return;
 
     const frame = grabFrame();
     if (!frame) return;
 
-    // Detect region once
-    if (!gameRegion) {
-        detectGameRegion(frame);
-        return;
-    }
+    // Crop to game region
+    const { x, y, width, height } = gameRegion;
 
-    // Later: crop frame, detect loads, update timer
+    const cropped = ctx.getImageData(x, y, width, height);
+
+    // TODO: load detection goes here
 }, SAMPLE_INTERVAL);

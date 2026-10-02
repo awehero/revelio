@@ -36,8 +36,14 @@ function createPlayer(videoId) {
         videoId: videoId,
         events: {
             onReady: () => {
-                console.log("Player ready");
-            }
+            console.log("Player ready");
+
+            // Grab first frame after a short delay
+            setTimeout(() => {
+                detectInitialRegion();
+            }, 500);
+        }
+
         }
     });
 }
