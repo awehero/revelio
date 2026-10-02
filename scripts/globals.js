@@ -13,6 +13,6 @@ const REGION_THRESHOLD = 15;   // brightness threshold for black bars
 let session = null;
 
 async function loadModel() {
-    session = await ort.InferenceSession.create("models/game_region.onnx");
+    session = await ort.InferenceSession.create("models/game_region_v2.onnx");
     console.log("ONNX model loaded");
 }
