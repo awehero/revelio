@@ -1,3 +1,5 @@
+// revelio/scripts/globals.js
+
 // GLOBAL STATE
 let player = null;          // YouTube player instance
 let gameRegion = null;      // { x, y, width, height }
