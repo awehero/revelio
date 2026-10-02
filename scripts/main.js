@@ -1,4 +1,5 @@
 // revelio/scripts/main.js
+loadModel();
 
 setInterval(() => {
     if (!player || !gameRegion) return;
