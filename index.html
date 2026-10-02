@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revelio (Splits and Loadless Finder)</title>
+    <link rel="icon" href="https://awehero.github.io/intro/awehero.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+
+<h1>Revelio</h1>
+
+<div class="input-area">
+    <input id="ytLink" placeholder="Paste YouTube link here">
+    <button id="loadBtn">Load Video</button>
+</div>
+
+<div id="playerContainer">
+    <div id="player"></div>
+</div>
+
+<canvas id="frameCanvas" width="320" height="180"></canvas>
+
+<div id="timer">00:00:00.000</div>
+
+<script src="scripts/youtube_loader.js"></script>
+</body>
+</html>
