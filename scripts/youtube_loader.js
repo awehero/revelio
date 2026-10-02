@@ -1,7 +1,5 @@
 // revelio/scripts/youtube_loader.js
 
-let player;
-
 // Extract YouTube ID from link
 function extractID(url) {
     // Standard watch URL
